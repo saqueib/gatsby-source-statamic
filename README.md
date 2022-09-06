@@ -1,3 +1,41 @@
+## 🔥 Whats new in this fork
+
+This fork allowes us set defaults value for any field which comes from statamic api as `null`. It also adds Option to pass collection query params for sorting, filtering etc.
+
+You have option to set default values globally or collection based
+
+```js
+/*
+* Default key value pair for null values.
+* It will be merged with default value if defined on collections level
+*/
+globalDefaultValues: { 
+  avatar: {id: "", permalink: ""}
+}
+
+collections: [
+      { 
+        handle: 'docs', 
+        defaultValues: { 
+          video: "",
+          content: "",
+          avatar: {
+            id: "",
+            permalink: ""
+          }
+        },
+        queryParams: "?sort=-title" // optional
+      }
+      ,
+      'fieldtypes',
+      'knowledge-base',
+      'modifiers',
+      'tags',
+      'variables',
+    ],
+```
+
+
 # Gatsby Source Statamic
 
 A [Gatsby](https://www.gatsbyjs.org/) source plugin for [Statamic 3](https://statamic.dev/) which will allow you to pull
