@@ -29,14 +29,14 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/robertguss/gatsby-source-statamic"
+    "url": "https://github.com/saqueib/gatsby-source-statamic"
   },
   "license": "MIT",
   "peerDependencies": {
     "gatsby": "^2.2.0 || ^4.14.1"
   },
   "bugs": {
-    "url": "https://github.com/robertguss/gatsby-source-statamic/issues"
+    "url": "https://github.com/saqueib/gatsby-source-statamic/issues"
   },
   "engines": {
     "node": ">=10.13.0"
