@@ -33,7 +33,7 @@
   },
   "license": "MIT",
   "peerDependencies": {
-    "gatsby": "^2.2.0"
+    "gatsby": "^2.2.0|^4.14.1"
   },
   "bugs": {
     "url": "https://github.com/robertguss/gatsby-source-statamic/issues"
