@@ -1,8 +1,8 @@
 {
   "name": "gatsby-source-statamic-g4",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Gatsby plugin for sourcing data from Statamic CMS",
-  "author": "Robert Guss <robertguss@gmail.com>",
+  "author": "Saqueib <saquibweb@gmail.com>",
   "main": "index.js",
   "scripts": {
     "build": "babel src --out-dir . --ignore \"**/__tests__\"",
