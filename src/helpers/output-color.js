@@ -1,3 +1,5 @@
+"use strict";
+
 /**
  * Colorize the output
  *
@@ -5,6 +7,7 @@
  * @param {any} c
  */
 const out = (msg, c) => `${c}${msg}${color.Reset}`;
+
 const color = {
   Reset: `\x1b[0m`,
   Effect: {
@@ -13,7 +16,7 @@ const color = {
     Underscore: `\x1b[4m`,
     Blink: `\x1b[5m`,
     Reverse: `\x1b[7m`,
-    Hidden: `\x1b[8m`,
+    Hidden: `\x1b[8m`
   },
   Font: {
     FgBlack: `\x1b[30m`,
@@ -23,7 +26,7 @@ const color = {
     FgBlue: `\x1b[34m`,
     FgMagenta: `\x1b[35m`,
     FgCyan: `\x1b[36m`,
-    FgWhite: `\x1b[37m`,
+    FgWhite: `\x1b[37m`
   },
   Back: {
     BgBlack: `\x1b[40m`,
@@ -33,13 +36,11 @@ const color = {
     BgBlue: `\x1b[44m`,
     BgMagenta: `\x1b[45m`,
     BgCyan: `\x1b[46m`,
-    BgWhite: `\x1b[47m`,
-  },
+    BgWhite: `\x1b[47m`
+  }
 };
-
 const colorized = {
   out,
-  color,
+  color
 };
-
 module.exports = colorized;
