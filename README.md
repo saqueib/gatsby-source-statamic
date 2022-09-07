@@ -6,6 +6,12 @@ You have option to set default values globally or collection based
 
 ```js
 /*
+* Any query parameter you want to pass globally like 'sort=-title&filter[featured]=true'
+* ref: https://statamic.dev/rest-api#filtering
+*/
+globalQueryParams: 'sort=-title'
+
+/*
 * Default key value pair for null values.
 * It will be merged with default value if defined on collections level
 */
@@ -24,7 +30,7 @@ collections: [
             permalink: ""
           }
         },
-        queryParams: "?sort=-title" // optional
+        queryParams: "sort=-title" // optional
       }
       ,
       'fieldtypes',

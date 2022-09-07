@@ -16,6 +16,7 @@ exports.sourceNodes = async ({
 }, {
   restApiRoutePrefix = 'api',
   globalDefaultValues = {},
+  globalQueryParams = '',
   baseUrl,
   customUrls,
   collections,
@@ -76,7 +77,9 @@ exports.sourceNodes = async ({
         queryParams = ""
       } = collections[i];
 
-      const apiUrl = `${normalizedBaseUrl}/${restApiRoutePrefix}/collections/${collectionName}/entries${queryParams}`;
+      const allQueryParams = `?${globalQueryParams}&${queryParams}`
+
+      const apiUrl = `${normalizedBaseUrl}/${restApiRoutePrefix}/collections/${collectionName}/entries${allQueryParams}`;
       const data = await fetchStatamicResource(apiUrl);
 
       if (!data) {
