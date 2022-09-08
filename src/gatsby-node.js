@@ -80,6 +80,8 @@ exports.sourceNodes = async ({
       const allQueryParams = `?${globalQueryParams}&${queryParams}`
 
       const apiUrl = `${normalizedBaseUrl}/${restApiRoutePrefix}/collections/${collectionName}/entries${allQueryParams}`;
+      console.log(`Fetching collection ${collectionName} from:`)
+      console.log(apiUrl)
       const data = await fetchStatamicResource(apiUrl);
 
       if (!data) {
