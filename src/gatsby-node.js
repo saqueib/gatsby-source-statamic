@@ -146,7 +146,7 @@ exports.sourceNodes = async ({
 
 
   if (globals) {
-    const apiUrl = `${normalizedBaseUrl}/${restApiRoutePrefix}/globals`;
+    const apiUrl = `${normalizedBaseUrl}/${restApiRoutePrefix}/globals?${globalQueryParams}`;
     const data = await fetchStatamicResource(apiUrl);
 
     if (!data) {
